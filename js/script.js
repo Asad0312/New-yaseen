@@ -1,3 +1,88 @@
+// In your script.js file, update or add this code:
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize Swiper slider
+    const heroSwiper = new Swiper('.hero-slider', {
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        on: {
+            slideChange: function() {
+                updateHeroContent(this.activeIndex);
+            },
+            init: function() {
+                updateHeroContent(this.activeIndex);
+            }
+        }
+    });
+
+    // Content for each slide
+    const slideContent = [
+        {
+            title: "Creating Unforgettable Events",
+            subtitle: "Professional planning for weddings, birthdays and corporate events",
+            buttonText: "Get Started",
+            buttonLink: "contact.html"
+        },
+        {
+            title: "Custom Invitation Cards",
+            subtitle: "Beautiful designs for your special occasion",
+            buttonText: "View Designs",
+            buttonLink: "invitations.html"
+        },
+        {
+            title: "Full Service Planning",
+            subtitle: "From concept to execution - we handle it all",
+            buttonText: "Our Services",
+            buttonLink: "services.html"
+        }
+    ];
+
+    // Update hero content based on active slide
+    function updateHeroContent(activeIndex) {
+        const realIndex = activeIndex % slideContent.length; // Handle loop
+        const content = slideContent[realIndex];
+        
+        const title = document.getElementById('hero-title');
+        const subtitle = document.getElementById('hero-subtitle');
+        const button = document.getElementById('hero-button');
+        
+        // Add fade out animation
+        title.style.animation = 'none';
+        subtitle.style.animation = 'none';
+        button.style.animation = 'none';
+        
+        setTimeout(() => {
+            // Update content
+            title.textContent = content.title;
+            subtitle.textContent = content.subtitle;
+            button.textContent = content.buttonText;
+            button.href = content.buttonLink;
+            
+            // Trigger fade in animation
+            title.style.animation = 'fadeInUp 1s ease';
+            subtitle.style.animation = 'fadeInUp 1s ease 0.3s forwards';
+            button.style.animation = 'fadeInUp 1s ease 0.6s forwards';
+            subtitle.style.opacity = '0';
+            button.style.opacity = '0';
+        }, 300);
+    }
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
