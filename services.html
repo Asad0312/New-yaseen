@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - YM Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header (Same as index.html) -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="YM Events" class="logo-img">
+                    <span>YM Events</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="invitations.html" class="nav-link">Invitations</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Services Hero -->
+    <section class="page-hero" style="background-image: url('./assets/hero-contact.jpg');">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Comprehensive event planning solutions tailored to your needs</p>
+        </div>
+    </section>
+
+    <!-- Services Details -->
+    <section class="section services-details">
+        <div class="container">
+            <div class="service-tabs">
+                <button class="tab-btn active" data-tab="weddings">Weddings</button>
+                <button class="tab-btn" data-tab="birthdays">Birthdays</button>
+                <button class="tab-btn" data-tab="corporate">Corporate</button>
+                <button class="tab-btn" data-tab="anniversaries">Anniversaries</button>
+            </div>
+            
+            <div class="tab-content active" id="weddings">
+                <div class="service-content">
+                    <div class="service-text">
+                        <h2>Wedding Planning Services</h2>
+                        <p>Our full-service wedding planning takes the stress out of your special day. We handle every detail from venue selection to vendor coordination, ensuring your wedding is everything you've dreamed of.</p>
+                        
+                        <h3>What We Offer:</h3>
+                        <ul>
+                            <li>Complete wedding planning and design</li>
+                            <li>Venue selection and site visits</li>
+                            <li>Vendor recommendations and management</li>
+                            <li>Budget planning and management</li>
+                            <li>Day-of coordination</li>
+                            <li>Custom invitation design</li>
+                        </ul>
+                        
+                        <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                    </div>
+                    <div class="service-image">
+                        <img src="assets/IMG-20250112-WA0062.jpg" alt="Wedding Planning">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="birthdays">
+                <!-- Similar structure for birthdays -->
+            </div>
+            
+            <div class="tab-content" id="corporate">
+                <!-- Similar structure for corporate -->
+            </div>
+            
+            <div class="tab-content" id="anniversaries">
+                <!-- Similar structure for anniversaries -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing">
+        <div class="container">
+            <h2 class="section-title">Service <span>Packages</span></h2>
+            <p class="section-subtitle">Choose the package that fits your needs</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <div class="price">$999<span>/event</span></div>
+                    <ul>
+                        <li>Initial consultation</li>
+                        <li>Vendor recommendations</li>
+                        <li>Timeline creation</li>
+                        <li>2 planning meetings</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Get Started</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Standard</h3>
+                    <div class="price">$2,499<span>/event</span></div>
+                    <ul>
+                        <li>Everything in Basic</li>
+                        <li>Unlimited planning meetings</li>
+                        <li>Vendor contract review</li>
+                        <li>Day-of coordination</li>
+                        <li>Custom invitation design</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <div class="price">$4,999<span>/event</span></div>
+                    <ul>
+                        <li>Everything in Standard</li>
+                        <li>Full design concept</li>
+                        <li>Venue selection</li>
+                        <li>Budget management</li>
+                        <li>Monthly planning meetings</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-outline">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title">Client <span>Testimonials</span></h2>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="client-img">
+                        <img src="assets/client-1.jpg" alt="Client">
+                    </div>
+                    <div class="client-review">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"YM Events made our wedding day absolutely perfect! They handled every detail and we didn't have to worry about a thing."</p>
+                        <h4>- Sarah & John</h4>
+                    </div>
+                </div>
+                
+                <!-- More testimonial cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/logo.png" alt="YM Events" class="footer-logo">
+                    <p>Creating memorable experiences through exceptional event planning.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="invitations.html">Invitations</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#weddings">Weddings</a></li>
+                        <li><a href="services.html#birthdays">Birthdays</a></li>
+                        <li><a href="services.html#corporate">Corporate Events</a></li>
+                        <li><a href="services.html#anniversaries">Anniversaries</a></li>
+                        <li><a href="invitations.html">Invitation Cards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Event Street, City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@ymevents.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 YM Events. All Rights Reserved.</p>
+            </div>
+        </div>
+        </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

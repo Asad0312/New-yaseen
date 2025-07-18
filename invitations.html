@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation Cards - YM Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header (Same as index.html) -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo.png" alt="YM Events" class="logo-img">
+                    <span>YM Events</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="invitations.html" class="nav-link">Invitations</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Invitations Hero -->
+    <section class="page-hero" style="background-image: url('./assets/hero-contact.jpg');">
+        <div class="container">
+            <h1>Invitation Cards</h1>
+            <p>Beautiful designs to announce your special event</p>
+        </div>
+    </section>
+
+    <!-- Invitation Collections -->
+    <section class="section invitations">
+        <div class="container">
+            <h2 class="section-title">Invitation <span>Collections</span></h2>
+            <p class="section-subtitle">Choose from our designs or request custom creations</p>
+            
+            <div class="collection-tabs">
+                <button class="tab-btn active" data-tab="wedding">Wedding</button>
+                <button class="tab-btn" data-tab="birthday">Birthday</button>
+                <button class="tab-btn" data-tab="anniversary">Anniversary</button>
+                <button class="tab-btn" data-tab="corporate">Corporate</button>
+            </div>
+            
+            <div class="tab-content active" id="wedding">
+                <div class="invitation-grid">
+                    <div class="invitation-card">
+                        <div class="card-image">
+                            <img src="assets/IMG-20250112-WA0065.jpg" alt="Wedding Invitation">
+                            <div class="overlay">
+                                <a href="contact.html" class="btn btn-outline">Customize</a>
+                            </div>
+                        </div>
+                        <h3>Elegant Rose Gold</h3>
+                        <div class="price">$3.99 <span>/card</span></div>
+                    </div>
+                    
+                    <!-- More wedding invitation cards -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="birthday">
+                <!-- Birthday invitation cards -->
+            </div>
+            
+            <!-- Other tab contents -->
+        </div>
+    </section>
+
+    <!-- Custom Design Section -->
+    <section class="section custom-design">
+        <div class="container">
+            <div class="custom-content">
+                <div class="custom-text">
+                    <h2>Need a Custom Design?</h2>
+                    <p>Our designers can create completely unique invitations tailored to your event's theme and style.</p>
+                    <ul>
+                        <li>100% original designs</li>
+                        <li>Unlimited revisions</li>
+                        <li>Premium paper options</li>
+                        <li>Matching thank you cards</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Request Custom Design</a>
+                </div>
+                <div class="custom-image">
+                    <img src="assets/custom-design.jpg" alt="Custom Invitation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Process -->
+    <section class="section order-process">
+        <div class="container">
+            <h2 class="section-title">How to <span>Order</span></h2>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Choose Design</h3>
+                    <p>Select from our collections or request custom design</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Customize Details</h3>
+                    <p>Provide your event details and any special requests</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Review Proof</h3>
+                    <p>We'll send you a digital proof for approval</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Receive Your Cards</h3>
+                    <p>Get your beautiful invitations delivered</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="assets/logo.png" alt="YM Events" class="footer-logo">
+                    <p>Creating memorable experiences through exceptional event planning.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="invitations.html">Invitations</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="services.html#weddings">Weddings</a></li>
+                        <li><a href="services.html#birthdays">Birthdays</a></li>
+                        <li><a href="services.html#corporate">Corporate Events</a></li>
+                        <li><a href="services.html#anniversaries">Anniversaries</a></li>
+                        <li><a href="invitations.html">Invitation Cards</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Event Street, City</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@ymevents.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 YM Events. All Rights Reserved.</p>
+            </div>
+        </div>
+        </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
